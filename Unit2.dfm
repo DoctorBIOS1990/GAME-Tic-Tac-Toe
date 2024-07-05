@@ -52,14 +52,14 @@ object MessageModal: TMessageModal
   object Label2: TLabel
     Left = 143
     Top = 8
-    Width = 122
+    Width = 131
     Height = 25
     Caption = 'NOTIFICATION'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -19
     Font.Name = 'Segoe UI'
-    Font.Style = []
+    Font.Style = [fsBold, fsUnderline]
     ParentFont = False
   end
   object cxImage1: TcxImage
@@ -68,12 +68,12 @@ object MessageModal: TMessageModal
     Align = alClient
     TabOrder = 2
     Transparent = True
-    ExplicitTop = 112
+    ExplicitTop = -8
     Height = 236
     Width = 385
   end
   object BitBtn1: TBitBtn
-    Left = 122
+    Left = 121
     Top = 176
     Width = 153
     Height = 41

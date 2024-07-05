@@ -56,35 +56,31 @@ implementation
 
 procedure TMessageModal.BitBtn1Click(Sender: TObject);
 begin
-  Image.ItemIndex := 0;
   MessageModal.Close;
 end;
 
 procedure TMessageModal.FormClose(Sender: TObject; var Action: TCloseAction);
 Var
   I:  Integer;
-
 begin
+      AlphaBlend := True;
+      UpdateWindow(Handle);
+      for I := 50 downto 10 do
+        Begin
+           AlphaBlendValue :=  5 * I;
+           Sleep(20);
+        End;
 
-    AlphaBlend := True;
-    UpdateWindow(Handle);
-    for I := 50 downto 10 do
-    Begin
-       AlphaBlendValue :=  5 * I;
-       Sleep(20);
-    End;
-
+      Image.ItemIndex := 0;
 end;
 
 procedure TMessageModal.FormShow(Sender: TObject);
 Var
   I:  Integer;
-
 begin
-    AlphaBlend := True;
-    UpdateWindow(Handle);
-    AlphaBlendValue :=  255 ;
-
+      AlphaBlend := True;
+      UpdateWindow(Handle);
+      AlphaBlendValue :=  255 ;
 End;
 
 end.

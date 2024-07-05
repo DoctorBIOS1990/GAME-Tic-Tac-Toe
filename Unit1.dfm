@@ -4,8 +4,8 @@ object FormGame: TFormGame
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'TheGame Tic-Tac-Toe'
-  ClientHeight = 472
-  ClientWidth = 684
+  ClientHeight = 471
+  ClientWidth = 680
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -5916,8 +5916,8 @@ object FormGame: TFormGame
   object Bakckground: TImage
     Left = 0
     Top = 0
-    Width = 684
-    Height = 472
+    Width = 680
+    Height = 471
     Cursor = crHandPoint
     Align = alClient
     Picture.Data = {
@@ -9257,12 +9257,14 @@ object FormGame: TFormGame
     Stretch = True
     ExplicitLeft = -32
     ExplicitTop = -32
+    ExplicitWidth = 684
+    ExplicitHeight = 472
   end
   object Grid: TStringGrid
     Left = 39
     Top = 109
     Width = 348
-    Height = 301
+    Height = 298
     Cursor = crHandPoint
     BorderStyle = bsNone
     ColCount = 3
@@ -9284,13 +9286,18 @@ object FormGame: TFormGame
     OnSelectCell = GridSelectCell
   end
   object Difficulty: TRadioGroup
-    Left = 53
-    Top = 421
-    Width = 177
-    Height = 41
+    Left = 32
+    Top = 417
+    Width = 209
+    Height = 50
     Caption = 'DIFFICULTY'
     Columns = 2
     DefaultHeaderFont = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
     HeaderFont.Charset = DEFAULT_CHARSET
     HeaderFont.Color = clWindowText
     HeaderFont.Height = -12
@@ -9300,12 +9307,13 @@ object FormGame: TFormGame
     Items.Strings = (
       'Easy.'
       'Hard.')
+    ParentFont = False
     TabOrder = 1
     StyleName = 'Windows10 Dark'
   end
   object btnRestart: TBitBtn
     Left = 271
-    Top = 424
+    Top = 426
     Width = 97
     Height = 37
     Caption = 'Restart.'
@@ -9447,7 +9455,7 @@ object FormGame: TFormGame
   object PointsBox: TGroupBox
     Left = 402
     Top = 99
-    Width = 121
+    Width = 127
     Height = 94
     Caption = ' POINTS '
     DefaultHeaderFont = False
@@ -9458,8 +9466,8 @@ object FormGame: TFormGame
     HeaderFont.Style = [fsBold]
     TabOrder = 3
     object Label1: TLabel
-      Left = 9
-      Top = 30
+      Left = 14
+      Top = 27
       Width = 45
       Height = 15
       Caption = 'HUMAN'
@@ -9471,8 +9479,8 @@ object FormGame: TFormGame
       ParentFont = False
     end
     object Label2: TLabel
-      Left = 80
-      Top = 30
+      Left = 85
+      Top = 27
       Width = 23
       Height = 15
       Caption = 'CPU'
@@ -9484,8 +9492,8 @@ object FormGame: TFormGame
       ParentFont = False
     end
     object ContPlayerLabel: TLabel
-      Left = 15
-      Top = 51
+      Left = 20
+      Top = 48
       Width = 34
       Height = 30
       Alignment = taCenter
@@ -9500,8 +9508,8 @@ object FormGame: TFormGame
       WordWrap = True
     end
     object ContCPULabel: TLabel
-      Left = 75
-      Top = 51
+      Left = 80
+      Top = 48
       Width = 34
       Height = 30
       Alignment = taCenter

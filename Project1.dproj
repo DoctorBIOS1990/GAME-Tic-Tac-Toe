@@ -89,6 +89,7 @@
         <VerInfo_Locale>1033</VerInfo_Locale>
         <VerInfo_Keys>CompanyName=Doctor BIOS;FileDescription=TheGame-TIc-Tac-Toe;FileVersion=1.0.0.0;InternalName=TheGame-TIc-Tac-Toe;LegalCopyright=;LegalTrademarks=;OriginalFilename=TheGame-TIc-Tac-Toe;ProgramID=TheGame-TIc-Tac-Toe;ProductName=TheGame-TIc-Tac-Toe;ProductVersion=1.0.0.0;Comments=Doctor BIOS</VerInfo_Keys>
         <Icon_MainIcon>Resources\IconReal.ico</Icon_MainIcon>
+        <DCC_DebugInfoInTds>true</DCC_DebugInfoInTds>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
@@ -129,6 +130,8 @@
         <BorlandProject>
             <Delphi.Personality>
                 <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcboffice2k280.bpl">Embarcadero C++Builder Office 2000 Servers Package</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcbofficexp280.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\dcloffice2k280.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\dclofficexp280.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
                 </Excluded_Packages>
