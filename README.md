@@ -1,4 +1,4 @@
-# :juggling_person: Juego de Tic Tac Toc.
+# :juggling_person: Game Tic Tac Toc.
 <p>  Un pequeño juego de destreza mental, a forma didáctica.</p>
 
 <div align="center">
